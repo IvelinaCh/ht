@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Registration</title>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body class="contain">
+    <main class="page-main">
+      <div class="page-main__nav">
+        <a href="#"><img src="img/logo.png" width="56" height="80" alt="На главную"></a>
+        <a href="#"><img src="img/arrow.png" width="40" height="93" alt="Дальше"></a>
+      </div>
+      <form class="page-main__form contest-form" action="https://#.ru" method="post">
+        <h1 class="caption">Регистрация</h1>
+        <div class="contest-form__group"><!--type="email"-->
+          <input class="contest-form__input" type="text" placeholder="ivan@domain.ru" id="address" name="address" minlength="1" required="">
+          <label class="contest-form__label" for="address">
+            Ваш e-mail
+          </label>
+        </div>
+        <div class="contest-form__group">
+          <input class="contest-form__input" type="password" placeholder="Придумайте пароль" id="password1" name="password1" minlength="1" required="">
+          <label class="contest-form__label" for="password1">
+            Придумайте пароль
+          </label>
+        </div>
+        <div class="contest-form__group">
+          <input class="contest-form__input" type="password" placeholder="Повторите пароль" id="password2" name="password2" minlength="1" required="">
+          <label class="contest-form__label" for="password2">
+            Повторите пароль
+          </label>
+        </div>
+        <div class="contest-form__group">
+          <input class="contest-form__input" type="text" placeholder="Иван" id="name" name="name" minlength="1" required="">
+          <label class="contest-form__label contest-form__label--name" for="name" data-title="Нужно заполнить">
+            Имя представителя
+          </label>
+        </div>
+        <div class="contest-form__group">
+          <input class="contest-form__input" type="text" placeholder="Иванов" id="lastname" name="lastname" autofocus="" minlength="1" required="">
+          <label class="contest-form__label" for="lastname">
+            Фамилия
+          </label>
+        </div>
+        <div class="contest-form__group">
+          <input class="contest-form__input" type="text" placeholder="Наименование салона" id="salon" name="salon" minlength="1" required="">
+          <label class="contest-form__label" for="salon">
+            Наименование салона
+          </label>
+        </div>
+        <div class="contest-form__group">
+          <input class="contest-form__input" type="tel" placeholder="+7(XXX)XXXXXXX" pattern="+7([0-9]{3})[0-9]{7}" value="+7(   )" id="tel" name="tel" required="">
+        </div>
+        <div class="contest-form__group">
+          <input class="contest-form__input" type="text" placeholder="Код из СМС" id="sms" name="sms" required="">
+          <label class="contest-form__label" for="sms">
+            Код из СМС
+          </label>
+        </div>
+        <div class="contest-form__group">
+          <button class="contest-form__button" type="submit">
+            Зарегистрироваться
+          </button>
+          <p class="contest-form__text">
+            Нажимая на кнопку «Зарегистрироваться»
+            я даю согласие на обработку личной информации 
+            и соглашаюсь с <a href="#">политикой сервиса</a>
+          </p>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
